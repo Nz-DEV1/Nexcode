@@ -1,14 +1,14 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#3498DB',
-        accent: '#2ECC71',
-        background: '#0b1120',
+        primary: '#00D2D3',
+        accent: '#00EBFF',
+        background: '#000000',
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],

@@ -36,7 +36,7 @@ const ContactSection = () => {
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent animate-pulse-slow">SCALE?</span>
                             </h2>
                             <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
-                                Stop settling for mediocre digital experiences. Partner with NEXcode and let's build something extraordinary together.
+                                Stop settling for mediocre digital experiences. Partner with NEXcode and let&apos;s build something extraordinary together.
                             </p>
 
                             <div className="flex flex-col sm:flex-row justify-center gap-6 mt-8 items-center">

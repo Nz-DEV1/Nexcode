@@ -38,7 +38,7 @@ const ServicesSection = () => {
             Our DNA & <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent animate-pulse-slow">Expertise</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl leading-relaxed font-medium">We don't just write code. We engineer solutions designed to scale, convert, and dominate.</p>
+          <p className="text-slate-400 text-lg max-w-xl leading-relaxed font-medium">We don&apos;t just write code. We engineer solutions designed to scale, convert, and dominate.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 auto-rows-[250px]" style={{ perspective: 1200 }}>

@@ -26,7 +26,7 @@ const AboutSection = () => {
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
             We are a collective of elite developers and visionary designers operating globally.
-            We don't do fluff. We build systems that perform securely, scale endlessly, and captivate globally.
+            We don&apos;t do fluff. We build systems that perform securely, scale endlessly, and captivate globally.
           </p>
         </motion.div>
 
