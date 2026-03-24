@@ -30,9 +30,11 @@ const PROJECTS = [
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: false },
-  transition: { type: "spring", damping: 25, stiffness: 100 }
+  viewport: { once: true, margin: "-100px" },
+  transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
 };
+
+
 
 const ProjectsSection = () => {
   return (
@@ -61,7 +63,7 @@ const ProjectsSection = () => {
               rel="noopener noreferrer"
               variants={fadeInUp}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className={`group relative rounded-[2.5rem] bg-[#0A0A0A]/80 backdrop-blur-xl border border-white/10 overflow-hidden transition-all duration-500 ${project.borderGlow} hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]`}
+              className={`group relative rounded-3xl md:rounded-[2.5rem] bg-[#0A0A0A]/80 backdrop-blur-xl border border-white/10 overflow-hidden transition-all duration-500 ${project.borderGlow} hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)]`}
             >
               {/* Animated Gradient Background */}
               <div className={`absolute inset-0 bg-gradient-to-br ${project.accentColor} opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`} />
@@ -69,8 +71,8 @@ const ProjectsSection = () => {
               {/* Noise Pattern Overlay */}
               <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] blend-overlay" />
 
-              <div className="relative w-full p-5 md:p-7 pb-0">
-                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-[2rem] border border-white/10 shadow-3xl bg-slate-900">
+              <div className="relative w-full p-4 md:p-7 pb-0">
+                <div className="relative w-full aspect-[16/10] overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/10 shadow-3xl bg-slate-900">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -86,7 +88,7 @@ const ProjectsSection = () => {
                 </div>
               </div>
 
-              <div className="relative z-10 p-8 md:p-10 pt-8">
+              <div className="relative z-10 p-6 md:p-10 pt-8">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-3xl font-black text-white tracking-tighter leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/80 transition-all duration-300">
                     {project.title}

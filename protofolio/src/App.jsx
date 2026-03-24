@@ -83,10 +83,10 @@ export default function App() {
         >
             <motion.h1 
               variants={fadeInUp}
-              className="text-5xl md:text-7xl lg:text-[7.5rem] font-black text-white tracking-tighter leading-[0.85] mb-8"
+              className="text-4xl md:text-7xl lg:text-[7.5rem] font-black text-white tracking-tighter leading-[0.85] mb-8"
             >
               ENGINEERING <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-white animate-pulse-slow">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent animate-pulse-slow">
                 PLATFORMS
               </span>
             </motion.h1>

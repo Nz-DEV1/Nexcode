@@ -5,9 +5,11 @@ import { Zap, Code2, Layout } from 'lucide-react';
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: false, margin: "-100px" },
-  transition: { type: "spring", damping: 25, stiffness: 100 }
+  viewport: { once: true },
+  transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
 };
+
+
 
 const fadeInLeft = {
   initial: { opacity: 0, x: -50 },
@@ -41,12 +43,12 @@ const ServicesSection = () => {
           <p className="text-slate-400 text-lg max-w-xl leading-relaxed font-medium">We don't just write code. We engineer solutions designed to scale, convert, and dominate.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 auto-rows-[250px]" style={{ perspective: 1200 }}>
+        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 md:gap-4 auto-rows-auto md:auto-rows-[250px]" style={{ perspective: 1200 }}>
           
           {/* Box 1: About (Large) */}
           <motion.div 
             variants={fadeInLeft}
-            className="bento-card rounded-[3rem] p-10 md:col-span-2 md:row-span-2 flex flex-col justify-between group overflow-hidden relative border border-white/10"
+            className="bento-card rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 md:col-span-2 md:row-span-2 flex flex-col justify-between group overflow-hidden relative border border-white/10"
           >
             <motion.div 
               animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
@@ -72,7 +74,7 @@ const ServicesSection = () => {
           {/* Box 2: Service 1 */}
           <motion.div 
             variants={fadeInRight}
-            className="bento-card rounded-[3rem] p-10 md:col-span-1 md:row-span-1 flex flex-col justify-center group border border-white/10 hover:border-accent/40 relative overflow-hidden"
+            className="bento-card rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 md:col-span-1 md:row-span-1 flex flex-col justify-center group border border-white/10 hover:border-accent/40 relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="w-12 h-12 rounded-full bg-accent/5 border border-accent/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-accent/10 transition-all duration-500 relative z-10">
@@ -85,7 +87,7 @@ const ServicesSection = () => {
           {/* Box 3: Service 2 */}
           <motion.div 
             variants={fadeInRight}
-            className="bento-card rounded-[3rem] p-10 md:col-span-1 md:row-span-1 flex flex-col justify-center group border border-white/10 hover:border-primary/40 relative overflow-hidden"
+            className="bento-card rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 md:col-span-1 md:row-span-1 flex flex-col justify-center group border border-white/10 hover:border-primary/40 relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="w-12 h-12 rounded-full bg-primary/5 border border-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/10 transition-all duration-500 relative z-10">
@@ -98,7 +100,7 @@ const ServicesSection = () => {
           {/* Box 4: Why Us / Speed (Wide) */}
           <motion.div 
             variants={fadeInUp}
-            className="bento-card rounded-[3rem] p-8 md:p-10 md:col-span-2 md:row-span-1 flex flex-col md:flex-row items-start md:items-center justify-between group relative overflow-hidden border border-white/10 gap-6 md:gap-0"
+            className="bento-card rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 md:col-span-2 md:row-span-1 flex flex-col md:flex-row items-start md:items-center justify-between group relative overflow-hidden border border-white/10 gap-6 md:gap-0"
           >
             <div className="absolute -bottom-4 md:-bottom-10 -right-4 md:-right-10 text-8xl md:text-[10rem] font-black text-white/[0.02] group-hover:text-white/[0.06] group-hover:rotate-12 group-hover:scale-110 transition-all duration-700 select-none">99</div>
             <div className="relative z-10">
